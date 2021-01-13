@@ -1,0 +1,1096 @@
+{
+	"info": {
+		"_postman_id": "e423a869-02cf-43af-a7d6-c98946a52fdd",
+		"name": "PenCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.1 Pen collection anzeigen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/collection",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"collection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.2 Einen Pen einlesen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/read?uuid=c32d5f54-330b-4896-a336-\n90fb7934b124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"read"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "c32d5f54-330b-4896-a336-\n90fb7934b124"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.3 Neuen Pen hinzufügen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Fruit Pink",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "f96ab973-eb81-444e-926c58a541d1e075",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "E02",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.4 Pen verändern",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Fruit Pink",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "f96ab973-eb81-444e-926c58a541d1e075",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "E02",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.5 Pen löschen",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/delete?uuid=c32d5f54-330b-4896-a336-\n90fb7934b124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "c32d5f54-330b-4896-a336-\n90fb7934b124"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.1 Unbekannten Pen löschen",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/delete?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				},
+				"description": "Fehlersituation"
+			},
+			"response": []
+		},
+		{
+			"name": "2.2 Unbekannten Pen ändern",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 3",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/update?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"update"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				},
+				"description": "Fehlersituation"
+			},
+			"response": []
+		},
+		{
+			"name": "2.3 Unbekannte Color beim Hinzufügen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 3",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "B0x74hsc-3063-sl7c-b46e192bd74bf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				},
+				"description": "Fehlersituation"
+			},
+			"response": []
+		},
+		{
+			"name": "2.4 Unbekannter Type beim Hinzufügen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 3",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Pencil",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				},
+				"description": "Fehlersituation"
+			},
+			"response": []
+		},
+		{
+			"name": "3.1 Pen name zu lang bei erstellung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Coolest of the cool grays to ever exist in this\nuniverse, in a time of legend, where the galaxy is in flames.",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				},
+				"description": "Formal falsch"
+			},
+			"response": []
+		},
+		{
+			"name": "3.2 Pen name zu kurz bei erstellung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ok",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				},
+				"description": "Formal falsch"
+			},
+			"response": []
+		},
+		{
+			"name": "3.3 Invalide Preiseingabe bei erstellung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "money",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.4 Invalide color-eingabe bei erstellung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "Cool",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.5 Invalide type-eingabe bei erstellung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Pencil",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.6 ID zu lang bei erstellung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C69420",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.1 Pen name zu lang beim verändern",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Coolest of the cool grays to ever exist in this\nuniverse, in a time of legend, where the galaxy is in flames.",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.2 Pen name zu kurz beim verändern",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ok",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba-4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba-4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.3 Invalide Preiseingabe beim verändern",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "money",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.4 Invalide color-Eingabe beim verändern",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "Cool",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.5 Invalide type-eingabe beim verändern",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Pencil",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.6 ID zu lang beim verändern",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Cool Gray 2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sketch",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "b5c4b7ac-34c3-427c-b42e193313dbf1eb",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "C69420",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myPens_war_exploded",
+						"resource",
+						"pen",
+						"create"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "424e805d-f110-48d7-a0ba4408b09ecfb1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,480 @@
+{
+	"id": "57edce29-e74a-4710-90dc-f415e9acf08c",
+	"name": "PenCollection",
+	"timestamp": "2020-04-25T16:57:20.057Z",
+	"collection_id": "e423a869-02cf-43af-a7d6-c98946a52fdd",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "56ccb304-872c-4f35-878e-0c58dba42bd4",
+			"name": "1.1 Pen collection anzeigen",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/collection",
+			"time": 213,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				213
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7d1f456f-e8d8-4fa9-ba36-19661398b5fc",
+			"name": "1.2 Einen Pen einlesen",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/read?uuid=c32d5f54-330b-4896-a336-\n90fb7934b124",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bc04f42b-7aa8-4a8b-91aa-0e8d42196004",
+			"name": "1.3 Neuen Pen hinzufügen",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0b5a58da-a9b5-40d2-8dc6-6b8c5fe345b3",
+			"name": "1.4 Pen verändern",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/update",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9c0e56fc-536d-4bb9-919b-d0f5289a3b32",
+			"name": "1.5 Pen löschen",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/delete?uuid=c32d5f54-330b-4896-a336-\n90fb7934b124",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2308e509-51dd-47bd-90ba-63908ca2c7fe",
+			"name": "2.1 Unbekannten Pen löschen",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/delete?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "af3a28bc-1bd4-4e5d-ba1e-5101503626ac",
+			"name": "2.2 Unbekannten Pen ändern",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/update?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "346c7ad0-ddf3-4c1e-b4c8-144ac000d0da",
+			"name": "2.3 Unbekannte Color beim Hinzufügen",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a527f8e1-7041-4be9-92ee-8a472833ca04",
+			"name": "2.4 Unbekannter Type beim Hinzufügen",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c5389140-0410-4e5c-8413-a3360732923a",
+			"name": "3.1 Pen name zu lang bei erstellung",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "072ac070-2234-4767-8843-da12b2113e3d",
+			"name": "3.2 Pen name zu kurz bei erstellung",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ca456805-e32c-40fa-a96e-42d0fcc0be5a",
+			"name": "3.3 Invalide Preiseingabe bei erstellung",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2b95f11b-1ae6-4dc7-8b52-1c60ff850907",
+			"name": "3.4 Invalide color-eingabe bei erstellung",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				21
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7dc6e0a2-c4ab-4ec4-9b20-72bc9d2e3616",
+			"name": "3.5 Invalide type-eingabe bei erstellung",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7cdd595f-2e1a-48c9-a269-a8c4e9c7103b",
+			"name": "3.6 ID zu lang bei erstellung",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				36
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a1452a55-941a-48ef-9590-2f01be4e3629",
+			"name": "4.1 Pen name zu lang beim verändern",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ee0a0251-a9ae-44b0-9e2d-6d39569e2664",
+			"name": "4.2 Pen name zu kurz beim verändern",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba-4408b09ecfb1",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ca0d985b-85c1-4125-807e-d490172fb9b3",
+			"name": "4.3 Invalide Preiseingabe beim verändern",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a9fb30fd-34f4-475e-84a6-77aa8946d2b9",
+			"name": "4.4 Invalide color-Eingabe beim verändern",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3f1edfd8-cb39-497c-a400-dab1d2590ae0",
+			"name": "4.5 Invalide type-eingabe beim verändern",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e95fe17d-1707-4053-8230-7f87a6123413",
+			"name": "4.6 ID zu lang beim verändern",
+			"url": "http://localhost:8080/myPens_war_exploded/resource/pen/create?uuid=424e805d-f110-48d7-a0ba4408b09ecfb1",
+			"time": 22,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				22
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 474,
+	"collection": {
+		"requests": [
+			{
+				"id": "56ccb304-872c-4f35-878e-0c58dba42bd4",
+				"method": "GET"
+			},
+			{
+				"id": "7d1f456f-e8d8-4fa9-ba36-19661398b5fc",
+				"method": "GET"
+			},
+			{
+				"id": "bc04f42b-7aa8-4a8b-91aa-0e8d42196004",
+				"method": "POST"
+			},
+			{
+				"id": "0b5a58da-a9b5-40d2-8dc6-6b8c5fe345b3",
+				"method": "PUT"
+			},
+			{
+				"id": "9c0e56fc-536d-4bb9-919b-d0f5289a3b32",
+				"method": "DELETE"
+			},
+			{
+				"id": "2308e509-51dd-47bd-90ba-63908ca2c7fe",
+				"method": "DELETE"
+			},
+			{
+				"id": "af3a28bc-1bd4-4e5d-ba1e-5101503626ac",
+				"method": "PUT"
+			},
+			{
+				"id": "346c7ad0-ddf3-4c1e-b4c8-144ac000d0da",
+				"method": "POST"
+			},
+			{
+				"id": "a527f8e1-7041-4be9-92ee-8a472833ca04",
+				"method": "POST"
+			},
+			{
+				"id": "c5389140-0410-4e5c-8413-a3360732923a",
+				"method": "POST"
+			},
+			{
+				"id": "072ac070-2234-4767-8843-da12b2113e3d",
+				"method": "POST"
+			},
+			{
+				"id": "ca456805-e32c-40fa-a96e-42d0fcc0be5a",
+				"method": "POST"
+			},
+			{
+				"id": "2b95f11b-1ae6-4dc7-8b52-1c60ff850907",
+				"method": "POST"
+			},
+			{
+				"id": "7dc6e0a2-c4ab-4ec4-9b20-72bc9d2e3616",
+				"method": "POST"
+			},
+			{
+				"id": "7cdd595f-2e1a-48c9-a269-a8c4e9c7103b",
+				"method": "POST"
+			},
+			{
+				"id": "a1452a55-941a-48ef-9590-2f01be4e3629",
+				"method": "PUT"
+			},
+			{
+				"id": "ee0a0251-a9ae-44b0-9e2d-6d39569e2664",
+				"method": "PUT"
+			},
+			{
+				"id": "ca0d985b-85c1-4125-807e-d490172fb9b3",
+				"method": "PUT"
+			},
+			{
+				"id": "a9fb30fd-34f4-475e-84a6-77aa8946d2b9",
+				"method": "PUT"
+			},
+			{
+				"id": "3f1edfd8-cb39-497c-a400-dab1d2590ae0",
+				"method": "PUT"
+			},
+			{
+				"id": "e95fe17d-1707-4053-8230-7f87a6123413",
+				"method": "PUT"
+			}
+		]
+	}
+}
